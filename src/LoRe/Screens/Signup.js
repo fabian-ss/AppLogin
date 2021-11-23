@@ -8,6 +8,8 @@ import { View, TouchableOpacity, ActivityIndicator} from 'react-native';
 import axios from 'axios';
 
 
-const Signup = ({navigation}) => {
+const Signup = () => {
 
 }
+
+export default Signup;

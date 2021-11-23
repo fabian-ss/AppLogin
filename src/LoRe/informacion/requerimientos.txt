@@ -1,0 +1,25 @@
+paquetes:
+
+yarn add react-native-elements
+expo install react-native-safe-area-context
+
+yarn add react-native-elements @react-navigation/native @react-navigation/native-stack react-redux @reduxjs/toolkit
+expo install react-native-safe-area-context formik styled-components expo-constants expo-constants @react-native-community/datetimepicker react-native-screens react-native-safe-area-context axios @react-native-async-storage/async-storage expo-app-loading
+
+Interfaz de usuario:
+
+expo install formik styled-components
+expo install expo-constants
+expo install @react-native-community/datetimepicker
+
+// Navigate:
+
+yarn add @react-navigation/native 
+expo install react-native-screens react-native-safe-area-context
+yarn add @react-navigation/native-stack
+expo install axios
+expo install @react-native-async-storage/async-storage
+expo install expo-app-loading
+
+yarn add react-redux
+yarn add @reduxjs/toolkit
