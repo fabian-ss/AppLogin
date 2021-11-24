@@ -60,7 +60,7 @@ const Login = ({navigation}) => {
 
     <View style={stylesLogin.headerlogin} >
         <View style={stylesLogin.containhead}>
-          <Text style={stylesLogin.containheadtext} >RandoCode Lab</Text>
+          <Text style={stylesLogin.containheadtext} >RandomCode Lab</Text>
           {/* <PageLogo resizeMode="cover" source={require('./../assets/img/conejito.png')}/> */}
 
         </View>
@@ -69,8 +69,7 @@ const Login = ({navigation}) => {
     <View style={stylesLogin.bodylogin} >
 
         <View style={stylesLogin.bodyloginsuper}>
-          <PageLogo resizeMode="cover" source={require('./../../../assets/img/conejito.png')}/>
-
+          {/* <PageLogo resizeMode="cover" source={require('./../../../assets/img/conejito.png')}/> */}
         </View>  
 
         <View style={stylesLogin.bodylogininfer}>
@@ -78,8 +77,8 @@ const Login = ({navigation}) => {
             <Text style={stylesLogin.containheadtext}>Inicio de Sesión</Text>
           </View>   
           <View style={stylesLogin.bodylogininferfields}>
-            <Text style={stylesLogin.containheadtext}>Campos a rellenar</Text>
-            <Formik
+            {/* <Text style={stylesLogin.containheadtext}>Campos a rellenar</Text> */}
+            {/* <Formik
             initialValues={{ username: '', password: '' }}
             onSubmit={(values, {setSubmitting}) => {
                 if (values.username == '' || values.password == ''){
@@ -142,7 +141,7 @@ const Login = ({navigation}) => {
                     </ExtraView>   
                     </StyledFormArea>
                 )}
-            </Formik>
+            </Formik> */}
           </View>   
         </View>    
 
@@ -153,21 +152,21 @@ const Login = ({navigation}) => {
   )
 }
 
-const MyTextInput = ({ label, icon, isPassword, hidePassword, setHidePassword, ...props}) => {
-  return (
-      <View>
-      <LeftIcon>
-          <Octicons name={icon} size={30} color={brand}/>
-      </LeftIcon>
-      <StyledInputLabel>{label}</StyledInputLabel>
-      <StyledTextInput {...props} />
-      {isPassword && (
-          <RigthtIcon onPress={()=> setHidePassword(!hidePassword)} >
-              <Ionicons name={ hidePassword ? 'md-eye-off' : 'md-eye'} size={30} color='rgb(0, 0, 26)'/>
-          </RigthtIcon>)}
-      </View>
-  );
-};
+// const MyTextInput = ({ label, icon, isPassword, hidePassword, setHidePassword, ...props}) => {
+//   return (
+//       <View>
+//       <LeftIcon>
+//           <Octicons name={icon} size={30} color={brand}/>
+//       </LeftIcon>
+//       <StyledInputLabel>{label}</StyledInputLabel>
+//       <StyledTextInput {...props} />
+//       {isPassword && (
+//           <RigthtIcon onPress={()=> setHidePassword(!hidePassword)} >
+//               <Ionicons name={ hidePassword ? 'md-eye-off' : 'md-eye'} size={30} color='rgb(0, 0, 26)'/>
+//           </RigthtIcon>)}
+//       </View>
+//   );
+// };
 
 
 export default Login;

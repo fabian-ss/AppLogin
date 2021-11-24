@@ -80,120 +80,121 @@ export const stylesLogin = StyleSheet.create({
                     },  
                 bodylogininferfields: {
                     backgroundColor: 'rgb(255,200,100)',
-                    justifyContent: 'center',
+                    // justifyContent: 'center',
                     alignItems: 'center',
                     height:'90%',
+                    paddingTop: 30,
                 },  
 
 });
 
-export const PageLogo = styled.Image`
-    width: 125px;
-    height: 125px;
-    /* width: 125px;
-    height: 125px; */
-`;
+// export const PageLogo = styled.Image`
+//     width: 125px;
+//     height: 125px;
+//     /* width: 125px;
+//     height: 125px; */
+// `;
 
-export const StyledFormArea = styled.View`
-    width: 90%;
-`;
+// export const StyledFormArea = styled.View`
+//     width: 85%;
+// `;
 
-export const MsgBox = styled.Text`
-    text-align: center;
-    font-size: 13px;
-`;
-
-
-export const StyledButton = styled.TouchableOpacity`
-    padding: 15px;
-    background-color: 'rgb(0, 0, 26)';
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    height: 55px;
-    /* marginVertial:5px; */
-
-    ${props => props.google == true && `
-        background-color: rgb(0, 0, 26);
-        flex-direction: row;
-        justify-content: center;
-    `}
-`;
+// export const MsgBox = styled.Text`
+//     text-align: center;
+//     font-size: 13px;
+// `;
 
 
-export const ButtonText = styled.Text`
-    color: rgb(0, 0, 26);
-    font-size: 16px;
+// export const StyledButton = styled.TouchableOpacity`
+//     padding: 15px;
+//     background-color: 'rgb(0, 0, 26)';
+//     justify-content: center;
+//     align-items: center;
+//     border-radius: 5px;
+//     height: 55px;
+//     /* marginVertial:5px; */
 
-    ${(props) => props.google == true && `
-        padding-left: 10px;
-        padding-right: 10px;
-        justify-content: center;
-    `}
+//     ${props => props.google == true && `
+//         background-color: rgb(0, 0, 26);
+//         flex-direction: row;
+//         justify-content: center;
+//     `}
+// `;
 
-`;
 
-export const Line = styled.View`
-    width: 100%;
-    height: 1px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: 'rgb(0, 0, 26)';    
-`; 
+// export const ButtonText = styled.Text`
+//     color: rgb(0, 0, 26);
+//     font-size: 16px;
 
-export const ExtraView = styled.View`
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px;
-`;
+//     ${(props) => props.google == true && `
+//         padding-left: 10px;
+//         padding-right: 10px;
+//         justify-content: center;
+//     `}
 
-export const ExtraText = styled.Text`
-    justify-content: center;
-    align-items: center;
-    color: 'rgb(0, 0, 26)';
-    font-size: 15px;
-`;
+// `;
 
-export const TextLink = styled.TouchableOpacity`
-    justify-content: center;
-    align-items: center;
-    margin-left: 7px;
-`;
+// export const Line = styled.View`
+//     width: 100%;
+//     height: 1px;
+//     margin-top: 10px;
+//     margin-bottom: 10px;
+//     background-color: 'rgb(0, 0, 26)';    
+// `; 
 
-export const TextLinkContent = styled.Text`
-    color: 'rgb(0, 0, 26)';
-    font-size: 15px;
-`;
+// export const ExtraView = styled.View`
+//     justify-content: center;
+//     flex-direction: row;
+//     align-items: center;
+//     padding: 10px;
+// `;
 
-export const LeftIcon = styled.View`
-    left: 15px;
-    top: 34px;
-    position: absolute;
-    z-index: 1;
-`;
+// export const ExtraText = styled.Text`
+//     justify-content: center;
+//     align-items: center;
+//     color: 'rgb(0, 0, 26)';
+//     font-size: 15px;
+// `;
 
-export const StyledTextInput = styled.TextInput`
-    background-color: 'rgb(0, 0, 26)';
-    padding: 15px;
-    padding-left: 55px;
-    border-radius: 5px;
-    font-size: 16px;
-    height: 60px;
-    margin-bottom: 10px;
-    color: 'rgb(0, 0, 26)';
-    /* marginVertial:3px; */
-`;
+// export const TextLink = styled.TouchableOpacity`
+//     justify-content: center;
+//     align-items: center;
+//     margin-left: 7px;
+// `;
 
-export const StyledInputLabel = styled.Text`
-    color: 'rgb(0, 0, 26)';
-    font-size: 13px;
-    text-align: left;
-`;
+// export const TextLinkContent = styled.Text`
+//     color: 'rgb(0, 0, 26)';
+//     font-size: 15px;
+// `;
 
-export const RigthtIcon = styled.TouchableOpacity`
-    right: 15px;
-    top: 34px;
-    position: absolute;
-    z-index: 1;
-`;
+// export const LeftIcon = styled.View`
+//     left: 15px;
+//     top: 34px;
+//     position: absolute;
+//     z-index: 1;
+// `;
+
+// export const StyledTextInput = styled.TextInput`
+//     background-color: 'rgb(0, 0, 26)';
+//     padding: 15px;
+//     padding-left: 55px;
+//     border-radius: 5px;
+//     font-size: 16px;
+//     height: 60px;
+//     margin-bottom: 10px;
+//     color: 'rgb(0, 0, 26)';
+//     /* marginVertial:3px; */
+// `;
+
+// export const StyledInputLabel = styled.Text`
+//     color: 'rgb(0, 0, 26)';
+//     font-size: 13px;
+//     text-align: left;
+// `;
+
+// export const RigthtIcon = styled.TouchableOpacity`
+//     right: 15px;
+//     top: 34px;
+//     position: absolute;
+//     z-index: 1;
+// `;
