@@ -86,25 +86,22 @@ export const stylesLogin = StyleSheet.create({
                     paddingTop: 30,
                 },  
 
-});
-
-// export const PageLogo = styled.Image`
-//     width: 125px;
-//     height: 125px;
-//     /* width: 125px;
-//     height: 125px; */
-// `;
-
+                PageLogo:{
+                    width: 125,
+                    height: 125,
+                },
+                StyledFormArea:{
 // export const StyledFormArea = styled.View`
 //     width: 85%;
 // `;
-
+                },
+                MsgBox:{
 // export const MsgBox = styled.Text`
 //     text-align: center;
 //     font-size: 13px;
 // `;
-
-
+                },
+                StyledButton:{
 // export const StyledButton = styled.TouchableOpacity`
 //     padding: 15px;
 //     background-color: 'rgb(0, 0, 26)';
@@ -120,8 +117,8 @@ export const stylesLogin = StyleSheet.create({
 //         justify-content: center;
 //     `}
 // `;
-
-
+                },
+                ButtonText:{
 // export const ButtonText = styled.Text`
 //     color: rgb(0, 0, 26);
 //     font-size: 16px;
@@ -133,7 +130,8 @@ export const stylesLogin = StyleSheet.create({
 //     `}
 
 // `;
-
+                },
+                Line:{
 // export const Line = styled.View`
 //     width: 100%;
 //     height: 1px;
@@ -141,7 +139,8 @@ export const stylesLogin = StyleSheet.create({
 //     margin-bottom: 10px;
 //     background-color: 'rgb(0, 0, 26)';    
 // `; 
-
+                },
+                ExtraView:{
 // export const ExtraView = styled.View`
 //     justify-content: center;
 //     flex-direction: row;
@@ -149,31 +148,37 @@ export const stylesLogin = StyleSheet.create({
 //     padding: 10px;
 // `;
 
+                },
+                ExtraText:{
 // export const ExtraText = styled.Text`
 //     justify-content: center;
 //     align-items: center;
 //     color: 'rgb(0, 0, 26)';
 //     font-size: 15px;
 // `;
-
+                },
+                TextLink:{
 // export const TextLink = styled.TouchableOpacity`
 //     justify-content: center;
 //     align-items: center;
 //     margin-left: 7px;
 // `;
-
+                },
+                TextLinkContent:{
 // export const TextLinkContent = styled.Text`
 //     color: 'rgb(0, 0, 26)';
 //     font-size: 15px;
 // `;
-
+                },
+                LeftIcon:{
 // export const LeftIcon = styled.View`
 //     left: 15px;
 //     top: 34px;
 //     position: absolute;
 //     z-index: 1;
 // `;
-
+                },
+                StyledTextInput:{
 // export const StyledTextInput = styled.TextInput`
 //     background-color: 'rgb(0, 0, 26)';
 //     padding: 15px;
@@ -185,16 +190,53 @@ export const stylesLogin = StyleSheet.create({
 //     color: 'rgb(0, 0, 26)';
 //     /* marginVertial:3px; */
 // `;
-
+                },
+                StyledInputLabel:{
 // export const StyledInputLabel = styled.Text`
 //     color: 'rgb(0, 0, 26)';
 //     font-size: 13px;
 //     text-align: left;
 // `;
-
+                },
+                RigthtIcon:{
 // export const RigthtIcon = styled.TouchableOpacity`
 //     right: 15px;
 //     top: 34px;
 //     position: absolute;
 //     z-index: 1;
 // `;
+                },
+                StyledTextInput:{
+
+                }
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

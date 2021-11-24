@@ -1,7 +1,7 @@
 
 import React,{useState, useContext} from 'react';
 import Constants from 'expo-constants'
-import { View,StyleSheet,Text, Dimensions,SafeAreaView,StatusBar } from 'react-native';
+import { View,StyleSheet,Text,Image, Dimensions,SafeAreaView,StatusBar } from 'react-native';
 
 // icons    
 import { Octicons, Ionicons, Fontisto } from '@expo/vector-icons';
@@ -61,15 +61,13 @@ const Login = ({navigation}) => {
     <View style={stylesLogin.headerlogin} >
         <View style={stylesLogin.containhead}>
           <Text style={stylesLogin.containheadtext} >RandomCode Lab</Text>
-          {/* <PageLogo resizeMode="cover" source={require('./../assets/img/conejito.png')}/> */}
-
         </View>
     </View>
 
     <View style={stylesLogin.bodylogin} >
 
         <View style={stylesLogin.bodyloginsuper}>
-          {/* <PageLogo resizeMode="cover" source={require('./../../../assets/img/conejito.png')}/> */}
+          <Image style={stylesLogin.PageLogo} resizeMode="cover" source={require('./../../../assets/img/conejito.png')}/>
         </View>  
 
         <View style={stylesLogin.bodylogininfer}>
@@ -77,7 +75,7 @@ const Login = ({navigation}) => {
             <Text style={stylesLogin.containheadtext}>Inicio de Sesión</Text>
           </View>   
           <View style={stylesLogin.bodylogininferfields}>
-            {/* <Text style={stylesLogin.containheadtext}>Campos a rellenar</Text> */}
+            <Text style={stylesLogin.containheadtext}>Campos a rellenar</Text>
             {/* <Formik
             initialValues={{ username: '', password: '' }}
             onSubmit={(values, {setSubmitting}) => {
