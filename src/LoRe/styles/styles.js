@@ -17,31 +17,30 @@ export const Colors = {
 export const stylesLogin = StyleSheet.create({
 
     container: {
+        width: '100%',
+        height: '100%',
         flex: 1,
         flexDirection: 'column',
-        backgroundColor: '#091115',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        // paddingTop:Constants.statusBarHeight, 
+        backgroundColor: 'cyan',
 
       },    
 
         headerlogin: {
-            backgroundColor: '#091115',
-            width: Dimensions.get('window').width,
-            height: Dimensions.get('window').height*(1/16),
+            width: '100%',
+            height: '6%',
+            backgroundColor: '#fff',
             justifyContent: 'center',
             alignItems: 'center',
-            
+
         },    
 
             containhead: {
-                backgroundColor: '#091115',
-                width: Dimensions.get('window').width*(15.7/16),
-                height: Dimensions.get('window').height*(.8/16),
+                backgroundColor: 'rgb(55,150,100)',
+                width: '98%',
+                height: '87%',
                 justifyContent: 'center',
                 alignItems: 'center',
-
+              
             },
             
                 containheadtext: {
@@ -50,58 +49,85 @@ export const stylesLogin = StyleSheet.create({
                 },
 
         bodylogin: {
-            backgroundColor: 'cyan',
             width: '100%',
-            height:'100%',
+            height: '94%',
+            backgroundColor: '#fff',
+            justifyContent: 'center',
+            alignItems: 'center',
+
         },
+            containbody: {
+                backgroundColor: 'blue',
+                width: '98%',
+                height: '98%',
+                // justifyContent: 'center',
+                // alignItems: 'center',
+                
+            },
+
 
             bodyloginsuper: {
-                // backgroundColor: 'blue',
+                backgroundColor: 'yellow',
                 width: '100%',
-                height:'18%',
-                minHeight: 140,
-                maxHeight: 150,
+                height:'20%',
+                // minHeight: 140,
+                // maxHeight: 150,
                 justifyContent: 'center',
                 alignItems: 'center',
 
             },  
+
             bodylogininfer: {
-                backgroundColor: 'red',
+                backgroundColor: 'rgb(255,120,120)',
                 color: 'white',
                 width: '100%',
                 height:'80%',
 
                 },  
+
+                PageLogo:{
+                    width: 100,
+                    height: 100,
+                },                
+
                 bodylogininferTitle: {
-                    backgroundColor: 'yellow',
+                    backgroundColor: 'rgb(155,150,80)',
                     justifyContent: 'center',
                     alignItems: 'center',
-                    height:'10%',
+                    height:'8%',
                     },  
                 bodylogininferfields: {
                     backgroundColor: 'rgb(255,200,100)',
                     // justifyContent: 'center',
                     alignItems: 'center',
-                    height:'90%',
+                    height:'92%',
                     paddingTop: 30,
                 },  
 
-                PageLogo:{
-                    width: 125,
-                    height: 125,
-                },
+       
                 StyledFormArea:{
 // export const StyledFormArea = styled.View`
 //     width: 85%;
 // `;
+            width: '85%',
                 },
                 MsgBox:{
+                    alignItems: 'center',
+                    fontSize: 13,
+            
 // export const MsgBox = styled.Text`
 //     text-align: center;
 //     font-size: 13px;
 // `;
                 },
                 StyledButton:{
+                    backgroundColor: 'rgb(0, 0, 26)',
+                    padding: 15,
+                    justifyContent: 'center',
+                    alignContent: 'center',
+                    borderRadius: 5,
+                    height: 55,
+
 // export const StyledButton = styled.TouchableOpacity`
 //     padding: 15px;
 //     background-color: 'rgb(0, 0, 26)';
@@ -119,6 +145,8 @@ export const stylesLogin = StyleSheet.create({
 // `;
                 },
                 ButtonText:{
+                   color: 'rgb(0, 0, 26)',
+                   fontSize: 16,
 // export const ButtonText = styled.Text`
 //     color: rgb(0, 0, 26);
 //     font-size: 16px;
@@ -132,6 +160,11 @@ export const stylesLogin = StyleSheet.create({
 // `;
                 },
                 Line:{
+                    width: '100%',
+                    height: 1,
+                    marginTop: 10,
+                    marginBottom: 10,
+                    backgroundColor: 'rgb(0, 0, 26)',
 // export const Line = styled.View`
 //     width: 100%;
 //     height: 1px;
@@ -141,6 +174,10 @@ export const stylesLogin = StyleSheet.create({
 // `; 
                 },
                 ExtraView:{
+                    justifyContent: 'center',
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                    paddingTop: 10,
 // export const ExtraView = styled.View`
 //     justify-content: center;
 //     flex-direction: row;
@@ -150,6 +187,10 @@ export const stylesLogin = StyleSheet.create({
 
                 },
                 ExtraText:{
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    color: 'rgb(0, 0, 26)',
+                    fontSize: 15,
 // export const ExtraText = styled.Text`
 //     justify-content: center;
 //     align-items: center;
@@ -158,6 +199,9 @@ export const stylesLogin = StyleSheet.create({
 // `;
                 },
                 TextLink:{
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    marginLeft: 7,
 // export const TextLink = styled.TouchableOpacity`
 //     justify-content: center;
 //     align-items: center;
@@ -165,12 +209,18 @@ export const stylesLogin = StyleSheet.create({
 // `;
                 },
                 TextLinkContent:{
+                    color: 'rgb(0, 0, 26)',
+                    fontSize: 15,
 // export const TextLinkContent = styled.Text`
 //     color: 'rgb(0, 0, 26)';
 //     font-size: 15px;
 // `;
                 },
                 LeftIcon:{
+                    left: 15,
+                    top: 34,
+                    position: 'absolute',
+                    zIndex: 1,
 // export const LeftIcon = styled.View`
 //     left: 15px;
 //     top: 34px;
@@ -179,6 +229,13 @@ export const stylesLogin = StyleSheet.create({
 // `;
                 },
                 StyledTextInput:{
+                    backgroundColor: 'rgb(0, 0, 26)',
+                    padding: 15,
+                    borderRadius: 5,
+                    fontSize: 16,
+                    height: 60,
+                    marginBottom: 'rgb(0, 0, 26)',
+                    color: ''
 // export const StyledTextInput = styled.TextInput`
 //     background-color: 'rgb(0, 0, 26)';
 //     padding: 15px;
@@ -192,6 +249,9 @@ export const stylesLogin = StyleSheet.create({
 // `;
                 },
                 StyledInputLabel:{
+                    color: 'rgb(0, 0, 26)',
+                    fontSize: 13,
+                    textAlign: 'left',
 // export const StyledInputLabel = styled.Text`
 //     color: 'rgb(0, 0, 26)';
 //     font-size: 13px;
@@ -199,6 +259,10 @@ export const stylesLogin = StyleSheet.create({
 // `;
                 },
                 RigthtIcon:{
+                    right: 15,
+                    top: 34,
+                    position: 'absolute',
+                    zIndex: 1,
 // export const RigthtIcon = styled.TouchableOpacity`
 //     right: 15px;
 //     top: 34px;
