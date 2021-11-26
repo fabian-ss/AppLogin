@@ -1,7 +1,7 @@
 
 import React,{useState, useContext} from 'react';
 import Constants from 'expo-constants'
-import { View,TextInput,Text,Image, Dimensions,SafeAreaView,StatusBar,TouchableOpacity } from 'react-native';
+import { View,TextInput,Text,Image, Dimensions,SafeAreaView,StatusBar,TouchableOpacity,ScrollView } from 'react-native';
 
 // icons    
 import { Octicons, Ionicons, Fontisto } from '@expo/vector-icons';
@@ -11,7 +11,7 @@ import axios from 'axios';
 
 // Colores 
 import { Colors,stylesLogin,PageLogo } from './../styles/styles';
-const { primary,secondary, tertiary, quaternary,brand } = Colors;
+const { primary,secondary, tertiary, quaternary,brand,mar } = Colors;
 
 // Redux
 import { useDispatch } from 'react-redux';
@@ -52,6 +52,8 @@ const Login = ({navigation}) => {
 
   return (
  <SafeAreaView style={stylesLogin.container}>
+   
+
       <StatusBar 
       style="auto" 
       animated={true}
@@ -60,22 +62,24 @@ const Login = ({navigation}) => {
 
     <View style={stylesLogin.headerlogin} >
         <View style={stylesLogin.containhead}>
+
           <Text style={stylesLogin.containheadtext} >RandomCode Lab</Text>
         </View>
     </View>
 
     <View style={stylesLogin.bodylogin} >
         <View style={stylesLogin.containbody}>
-          <View style={stylesLogin.bodyloginsuper}>
-            <Image style={stylesLogin.PageLogo} resizeMode="cover" source={require('./../../../assets/img/conejito.png')}/>
-          </View>  
+          {/* <View style={stylesLogin.bodyloginsuper}>
+          <Image style={stylesLogin.PageLogo} resizeMode="cover" source={require('./../../../assets/img/conejito.png')}/>
+
+          </View>   */}
 
           <View style={stylesLogin.bodylogininfer}>
             <View style={stylesLogin.bodylogininferTitle}>
               <Text style={stylesLogin.containheadtext}>Inicio de Sesión</Text>
             </View>   
             <View style={stylesLogin.bodylogininferfields}>
-              <Text style={stylesLogin.containheadtext}>Campos a rellenar</Text>
+              
               <Formik
               initialValues={{ username: '', password: '' }}
               onSubmit={(values, {setSubmitting}) => {
@@ -93,7 +97,7 @@ const Login = ({navigation}) => {
                   {({ handleChange, handleBlur,handleSubmit,values,isSubmitting }) => (
                       <View style={stylesLogin.StyledFormArea}>
                       <MyTextInput
-                          style={stylesLogin.MyTextInput}
+                          // style={stylesLogin.MyTextInput}
                           label="Ingresa nombre de usuario"
                           icon="mail"
                           placeholder="username"
@@ -104,7 +108,7 @@ const Login = ({navigation}) => {
                           // keyboardType="username-address"
                       />
                       <MyTextInput
-                      style={stylesLogin.MyTextInput}
+                      // style={stylesLogin.MyTextInput}
                           label="Ingresa tu contraseña"
                           icon="lock"
                           placeholder="* * * * * * * * * * "
@@ -140,7 +144,9 @@ const Login = ({navigation}) => {
                       <TouchableOpacity 
                       style={stylesLogin.StyledButton}
                       google={true} onPress={handleSubmit}>
-                          <Fontisto name="google" size={25} color='rgb(0, 0, 26)'/>
+                          <Fontisto 
+                          style={stylesLogin.Fontisto}
+                          name="google" size={25} color='rgb(0, 0, 26)'/>
                           <Text 
                           style={stylesLogin.ButtonText}
                           google={true}>Sign in with Google</Text>
@@ -163,37 +169,35 @@ const Login = ({navigation}) => {
                       </View>
                   )}
               </Formik>
+
             </View>   
           </View>    
         </View>
 
     </View>
   
-
 </SafeAreaView>    
   )
 }
 
 const MyTextInput = ({ label, icon, isPassword, hidePassword, setHidePassword, ...props}) => {
   return (
-      <View>
-      <View
-      style={stylesLogin.LeftIcon}
-      >
-          <Octicons name={icon} size={30} color={brand}/>
-      </View>
-      <Text
-      style={stylesLogin.StyledInputLabel}
-      >{label}</Text>
-      <TextInput 
-      style={stylesLogin.StyledTextInput}
-      {...props} />
-      {isPassword && (
-          <TouchableOpacity 
-          style={stylesLogin.RigthtIcon}
-          onPress={()=> setHidePassword(!hidePassword)} >
-              <Ionicons name={ hidePassword ? 'md-eye-off' : 'md-eye'} size={30} color='rgb(0, 0, 26)'/>
-          </TouchableOpacity>)}
+      <View style={stylesLogin.MyTextInput}>
+        <View style={stylesLogin.LeftIcon}>
+            <Octicons 
+              style={stylesLogin.Octicons}
+              name={icon} size={30} color={mar}/>
+        </View>
+        <Text style={stylesLogin.StyledInputLabel}>
+          {label}
+        </Text>
+        <TextInput style={stylesLogin.StyledTextInput} {...props} />
+        {isPassword && (
+            <TouchableOpacity style={stylesLogin.RigthtIcon}
+              onPress={()=> setHidePassword(!hidePassword)} >
+                <Ionicons name={ hidePassword ? 'md-eye-off' : 'md-eye'} size={30} color='rgba(255, 255, 255,.5)'/>
+            </TouchableOpacity>
+        )}
       </View>
   );
 };
